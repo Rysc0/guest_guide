@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .title {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .language-buttons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 10px;
+        }
+        .language-buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .language-buttons button:hover {
+            background-color: #0056b3;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .map {
+            margin-top: 15px;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Guest Guide</div>
+    <div class="language-buttons">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('hr')">Croatian</button>
+        <button onclick="setLanguage('de')">German</button>
+    </div>
+    <div class="section" id="section1">
+        <div class="content en">
+            <h2>Section 1</h2>
+            <p>Welcome to the guest guide. Here is some information about our first location.</p>
+        </div>
+        <div class="content hr" style="display: none;">
+            <h2>Odjeljak 1</h2>
+            <p>Dobrodošli u vodič za goste. Ovdje su neke informacije o našoj prvoj lokaciji.</p>
+        </div>
+        <div class="content de" style="display: none;">
+            <h2>Abschnitt 1</h2>
+            <p>Willkommen im Gästeführer. Hier sind einige Informationen zu unserem ersten Standort.</p>
+        </div>
+        <img src="slon.jpg" alt="Location 1">
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=45.050226723135644, 16.376804762665593&z=15&output=embed" width="100%" height="250"></iframe>
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <div class="content en">
+            <h2>Section 2</h2>
+            <p>Here is some information about our second location.</p>
+        </div>
+        <div class="content hr" style="display: none;">
+            <h2>Odjeljak 2</h2>
+            <p>Ovdje su neke informacije o našoj drugoj lokaciji.</p>
+        </div>
+        <div class="content de" style="display: none;">
+            <h2>Abschnitt 2</h2>
+            <p>Hier sind einige Informationen zu unserem zweiten Standort.</p>
+        </div>
+        <img src="https://via.placeholder.com/800x400" alt="Location 2">
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=45.813183,15.978550&z=15&output=embed" width="100%" height="250"></iframe>
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="content en">
+            <h2>Section 3</h2>
+            <p>Here is some information about our third location.</p>
+        </div>
+        <div class="content hr" style="display: none;">
+            <h2>Odjeljak 3</h2>
+            <p>Ovdje su neke informacije o našoj trećoj lokaciji.</p>
+        </div>
+        <div class="content de" style="display: none;">
+            <h2>Abschnitt 3</h2>
+            <p>Hier sind einige Informationen zu unserem dritten Standort.</p>
+        </div>
+        <img src="https://via.placeholder.com/800x400" alt="Location 3">
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=48.856613,2.352222&z=15&output=embed" width="100%" height="250"></iframe>
+        </div>
+    </div>
+    <div class="section" id="section4">
+        <div class="content en">
+            <h2>Section 4</h2>
+            <p>Here is some information about our fourth location.</p>
+        </div>
+        <div class="content hr" style="display: none;">
+            <h2>Odjeljak 4</h2>
+            <p>Ovdje su neke informacije o našoj četvrtoj lokaciji.</p>
+        </div>
+        <div class="content de" style="display: none;">
+            <h2>Abschnitt 4</h2>
+            <p>Hier sind einige Informationen zu unserem vierten Standort.</p>
+        </div>
+        <img src="https://via.placeholder.com/800x400" alt="Location 4">
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=35.689487,139.691711&z=15&output=embed" width="100%" height="250"></iframe>
+        </div>
+    </div>
+    <div class="section" id="section5">
+        <div class="content en">
+            <h2>Section 5</h2>
+            <p>Here is some information about our fifth location.</p>
+        </div>
+        <div class="content hr" style="display: none;">
+            <h2>Odjeljak 5</h2>
+            <p>Ovdje su neke informacije o našoj petoj lokaciji.</p>
+        </div>
+        <div class="content de" style="display: none;">
+            <h2>Abschnitt 5</h2>
+            <p>Hier sind einige Informationen zu unserem fünften Standort.</p>
+        </div>
+        <img src="https://via.placeholder.com/800x400" alt="Location 5">
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=-33.868820,151.209296&z=15&output=embed" width="100%" height="250"></iframe>
+        </div>
+    </div>
+    <!-- Add more sections as needed -->
+    <script>
+        function setLanguage(lang) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.style.display = content.classList.contains(lang) ? 'block' : 'none';
+            });
+        }
+
+        const sections = document.querySelectorAll('.section');
+        const options = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Set default language to English
+        setLanguage('en');
+    </script>
+</body>
+</html>
