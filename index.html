@@ -5,74 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guest Guide</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f2f5;
-            color: #333;
-        }
-        .title {
-            text-align: center;
-            padding: 20px;
-            background-color: #007bff;
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .language-buttons {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-            gap: 10px;
-        }
-        .language-buttons button {
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .language-buttons button:hover {
-            background-color: #0056b3;
-        }
-        .section {
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.6s ease;
-        }
-        .section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 15px;
-        }
-        .section h2 {
-            margin-top: 0;
-            color: #007bff;
-        }
-        .map {
-            margin-top: 15px;
-        }
-        p {
-            line-height: 1.6;
-        }
-    </style>
 </head>
 <body>
     <div class="title">Guest Guide</div>
@@ -83,18 +15,48 @@
     </div>
     <div class="section" id="section1">
         <div class="content en">
-            <h2>Section 1</h2>
-            <p>Welcome to the guest guide. Here is some information about our first location.</p>
+            <h2>Restoran Dukat</h2>
+            <p>
+                <strong>Description:</strong> Restaurant Dukat is one of the best restaurants in the region. It's located in Bosnia across the border. The food is excellent, it's not expensive and the staff is friendly. We recommend trying Ćevapi or Lignje na žaru (grilled calamari) but whatever you choose you won't regret it.
+            </p>
+            <p>
+                <strong>Working hours:</strong><br>
+                Mon-Sun -> 07:00-24:00
+            </p>
+            <p>
+                <strong>Address:</strong> Nikole Pašića bb, Novi Grad - Bosanski Novi
+            </p> 
         </div>
         <div class="content hr" style="display: none;">
-            <h2>Odjeljak 1</h2>
-            <p>Dobrodošli u vodič za goste. Ovdje su neke informacije o našoj prvoj lokaciji.</p>
+            <h2>Restoran Dukat</h2>
+    <p>
+        <strong>Opis:</strong> Restoran Dukat jedan je od najboljih restorana u regiji. Nalazi se u Bosni preko granice. Hrana je izvrsna, nije skupa, a osoblje je ljubazno. Preporučujemo da probate ćevape ili lignje na žaru, ali što god odaberete, nećete požaliti.
+    </p>
+    <p>
+        <strong>Radno vrijeme:</strong><br>
+        Pon-Ned -> 07:00-24:00
+    </p>
+    <p>
+        <strong>Adresa:</strong> Nikole Pašića bb, Novi Grad - Bosanski Novi
+    </p>
         </div>
         <div class="content de" style="display: none;">
-            <h2>Abschnitt 1</h2>
-            <p>Willkommen im Gästeführer. Hier sind einige Informationen zu unserem ersten Standort.</p>
+            <h2>Restaurant Dukat</h2>
+    <p>
+        <strong>Beschreibung:</strong> Das Restaurant Dukat ist eines der besten Restaurants in der Region. Es liegt in Bosnien, über die Grenze. Das Essen ist ausgezeichnet, es ist nicht teuer und das Personal ist freundlich. Wir empfehlen Ćevapi oder Lignje na žaru (gegrillte Tintenfische) zu probieren, aber egal was Sie wählen, Sie werden es nicht bereuen.
+    </p>
+    <p>
+        <strong>Öffnungszeiten:</strong><br>
+        Mo-So -> 07:00-24:00
+    </p>
+    <p>
+        <strong>Adresse:</strong> Nikole Pašića bb, Novi Grad - Bosanski Novi
+    </p>
         </div>
-        <img src="slon.jpg" alt="Location 1">
+            <div class="dukat">
+                <img src="images/dukat.jpg" alt="Dukat 1">
+                <img src="images/dukat2.jpeg" alt="Dukat 2">
+            </div>
         <div class="map">
             <iframe src="https://maps.google.com/maps?q=45.050226723135644, 16.376804762665593&z=15&output=embed" width="100%" height="250"></iframe>
         </div>
